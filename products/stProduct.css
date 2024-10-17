@@ -1,0 +1,210 @@
+body{
+    font-family: "Adobe Arabic SHIN", sans-serif;
+    font-size: x-large;
+    height: 2500px;
+}
+
+.searchbox{
+    background-color: white;
+    border: 0;
+    font-size: medium;
+    direction: rtl;
+    width: 110px;
+    margin-left: 10px;
+}
+input:focus {
+    outline: none
+}
+.logomatn{
+    width: 150px;
+    height: auto;
+}
+.logomatn img{
+    max-width: 100%;
+    height: auto;
+}
+
+.fixme{
+    position: fixed;
+}
+.minifont2{
+    position: absolute;
+    font-size: smaller;
+    top: -20px;
+    left: 80px;
+    background-color: white;
+}
+.daywehave{
+   width: 85px;
+   align-items: center;
+   justify-self: center;
+
+}
+.selectday{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+}
+.filterbox{
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+}
+.ticketbox{
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px 10px 0 0;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    transition-property:box-shadow;
+    transition-duration: 0.2s;
+}
+.ticketbox:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.108);
+}
+#extratiket{
+    height: 165px;
+    background-color: rgb(250, 250, 250);
+    display: none;
+
+}
+.maintiket{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.labeltiket{
+    background-color: rgba(88, 247, 250, 1);
+    border-radius: 5px 20px 20px 5px;
+    border: 2px dashed rgba(123, 123, 123, 0.474);
+    
+}
+.imgairlinenew{
+    width: 60px;
+    border-radius: 50%;
+}
+.labelmaintick{
+    background-color: rgb(246, 245, 245);
+    border-radius: 20px 0 0 20px ;
+    border: 2px dashed rgba(123, 123, 123, 0.474);
+    border-left: 0;
+    transition-duration: background-color;
+    transition-duration: 0.2s;
+    
+}
+.labelmaintick:hover{
+    box-shadow: 5px 5px 0.5px rgba(0, 0, 0, 0.176);
+
+}
+
+.border1{
+    border: 1px solid black;
+}
+.searchheplernav{
+    height: 50px;
+
+}
+.searchhelp{
+    position: absolute;
+    left: 35%;
+    top: -55%;
+    background-color: rgb(255, 255, 255);
+    height:20px;
+    z-index: 4;
+    width:85px;
+    font-size: smaller;
+    
+    
+}
+.inputhepler{
+    width: 80px;
+    border: 0;
+    direction: rtl;
+    font-size: medium;
+    font-weight: bold;
+}
+
+input{
+    font-size: 10px;
+    
+}
+
+.showinfodiv{
+    height: 485px;
+    width: 900px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+    position: fixed;
+    border-radius: 10px 0 10px 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+}
+.hiderdiv{
+    background-color: rgba(0, 0, 0, 0.678);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    position: fixed;
+}
+.btnsubmit{
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    font-size: small;
+}
+#texthere{
+    margin: 0;
+}
+
+.controlcont{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 70px;
+    height: 200px;
+    background-color: rgb(107, 109, 109);
+    z-index: 36;
+    border-radius: 0 0 10px 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+
+
+}
+.adoltorkid{
+    position: absolute;
+    top: 0%;
+    left: 107.8%;
+    width: 70px;
+    height: 80px;
+    background-color: rgb(134, 136, 136);
+    z-index: 36;
+    border-radius: 0px 10px 10px 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+
+}
+.sidebar{
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    background-color: aqua;
+    top: 20%;
+    right: 0;
+    position: fixed;
+    border-radius: 10px 0 0 10px;
+    transition-property: width,height;
+    transition-duration: 0.5s;
+    z-index: 30;
+}
+.submithelperdiv{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translatex(-50%);
+}

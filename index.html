@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/iranian-sans" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2bb21f4a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.index.css">
+    <link rel="stylesheet" href="myboot.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="darkmood/darkmood.css">
+    <link rel="stylesheet" href="darkmood/mybootdark.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="body" class="body">
+    <div class="container mt-3">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="logomatn">
+                    <img src="img/logomatn.png" alt="" id="logohead">
+                </div>
+            </div>
+            <div class="col-md-1 text-xsmall text-black">تور</div>
+            <div class="col-md-1 text-xsmall text-black">تجربه ها</div>
+            <div class="col-md-1 text-xsmall text-black">سفر ها</div>
+            <div class="col-md-1 text-xsmall text-black">هوشگرد</div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-md-6 text-xsmall text-black">ورود</div>
+                    <div class="col-md-6" id="darkmoodbut">
+                        <div class="mybtndarkthemeday" id="darkthembutmain">
+                            <div class="boxforiconday" id="boxforiconday">
+                                <i class="fa-regular fa-sun" style="color: #ffffff;" style="display: inline;"></i>
+                                <i class="fa fa-moon-o" aria-hidden="true" style="display: none; color: black;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container text-center mt-3 mb-3">
+        <div class="row">
+            <div class="col-md-12 text-black" style="font-size: 70px;">کجا بریم؟</div>
+        </div>
+
+        <div class="mt-3" style="justify-content: center ; display: flex; font-size: xx-large;" >
+            <div class="chose" style="justify-content: center; display: flex; width: 90%; text-align: center;">
+                <div class="col-md-2">
+                    <div class="row p-2 menudiv" style="justify-content: center;" >
+                        <div class="matn">
+                            <button class="mybtn1 menubut text-center" id="house">
+                                <i class="fa-solid fa-mountain-sun  text-center"></i>
+                                <p class="text-xsmall text-black">اقامتگاه</p>
+                            </button>
+                        </div>
+                        <div class="ax"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row p-2 menudiv" style="justify-content: center;" >
+                        <div class="matn">
+                            <button class="mybtn1 menubut text-center" id="toor">
+                                <i class="fa-solid fa-mountain-sun "></i>
+                                <p class="text-xsmall text-black">تور</p>
+                            </button>
+                        </div>
+                        <div class="ax"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row p-2 menudiv" style="justify-content: center;" >
+                        <div class="matn text-center">
+                            <button class="mybtn1 menubut text-center " id="hotel">
+                                <i class="fa-solid fa-hotel  text-center"></i>
+                                <p class="text-xsmall text-black">هتل</p>
+                            </button>
+                        </div>
+                        <div class="ax"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row p-2 menudiv" style="justify-content: center;">
+                        <div class="matn">
+                            <button class="mybtn1 menubut" id="train">
+                                <i class="fa-solid fa-train "></i>
+                                <p class="text-xsmall text-black">قطار</p>
+                            </button>
+                        </div>
+                        <div class="ax"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row p-2 menudiv" style="justify-content: center;">
+                        <div class="matn">
+                            
+                            <button class="mybtn1 menubut" id="flyout">
+                                <i class="fa-solid fa-plane fa-flip-horizontal" style="margin: 0;"></i>
+                                <p class="text-xsmall text-black">پرواز خارجی</p>
+                            </button>
+                        </div>
+                        <div class="ax"></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row p-2 menudiv bordermenu" style="justify-content: center;" id="menudiv">
+                        <div class="matn">
+                            <button class="mybtn1 menubut" id="flyin">
+                                <i class="fa-solid fa-plane " style="margin: 0;"></i>
+                                <p class="text-xsmall text-black">پرواز داخلی</p> 
+                            </button>
+                        </div>
+                        <div class="ax"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container searchin " id="hotelsearch" style="display: none;">
+            <div style="display: flex; justify-content: center;">
+                <div class="searchbox mt-4 ">
+                    <div style="margin-left: 5px;">
+                        <button class="mybtn2 text-xsmall text-black" type="submit"> جستجو </button>
+                    </div>
+                    <div style="margin-right: 0px;">
+                        <input type="search" id="searchit" placeholder="نام شهر یا هتل مورد نظر" class="searchinput3 text-xsmall text-black">
+                    </div>
+                </div>
+            </div>
+            <div style="z-index: 4; position: absolute; width: 50%; left: 50%; transform: translateX(-50%);">
+                <div class="searchhelper boxshodow mt-2" id="searchhelper"></div>
+            </div>
+        </div>
+
+ 
+
+        <div class="container mt-2 text-black " id="flyinsearch">
+            <div class="row flyin">
+                <div class="col-md-12">
+                    <div class="justifyend">
+                    </div>
+
+                    <div class="row p-4 ">
+                        <div class="col-md-1 mr-3" style="align-items: center; display: flex;"> 
+                            <button class="mybtn2" type="submit" style="border-radius: 10px; width: 200px;" id="searchcomplate"> 
+                                <a href="products/products.html">جستجو</a>    
+                            </button>
+                        </div>
+
+                        <div class="col-md-3 mr-3 boxshodow">
+                            <div class="row border1 p-2">
+                                <div class="col-md-12">
+                                    <div class="row abslute">
+                                        <div class="col-md-12 minifont miniinfo2 text-xsmall text-black">تعداد مسافران</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="search" class="searchinput2 text-small text-bold" id="searchinput2" style="width: 100px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3  ">
+                            <div class="row border1 p-2 boxshodow">
+                                <div class="col-md-6 borderright">
+                                    <div class="noacsses"></div>
+                                    <div class="row abslute ">
+                                        <div class="col-md-12 minifont miniinfo text-xsmall text-black">تاریخ برگشت</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="search" class="searchinput1" style="width: 100px;" id="dropdowntimeboxback" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row abslute">
+                                        <div class="col-md-12 minifont miniinfo text-xsmall text-black" >تاریخ رفت</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="search" class="searchinput1" id="dropdowntimeboxgo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  dropdowntime" style="position: absolute; display: none; z-index: 2;" id="dropdowntime">
+                                    <div class="col-md-12">
+                                        <div class="justifysparound">
+                                            <div>برو به امروز</div>
+                                            <div>تقویم میلادی</div>
+                                        </div>
+                                        <div class="justifycenter">
+                                            <div class="mr-5">
+                                                <button class="btn bg-light">ماه</button>
+                                            </div>
+                                            <div class="">
+                                                <button class="btn bg-light">سال</button>
+                                            </div>
+                                        </div>
+                                        <div class="row text-xsmall text-black">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-12 text-center" id="mountgo">مهر</div>
+                                                    <div class="btnleft" >
+                                                        <button class="btn btn-sm btn-light" id="mountgobtn"><</button>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center calenderdays2" style="padding-left: 15px; padding-right: 15px; margin: 0; width: 100%;">
+
+                                                    <div>ج</div>
+                                                    <div>پ</div>
+                                                    <div>چ</div>
+                                                    <div>س</div>
+                                                    <div>د</div>
+                                                    <div>ی</div>
+                                                    <div>ش</div>
+                                                </div>
+
+                                                 <div class="text-center calenderdays daysmback" style="padding-left: 15px; padding-right: 15px; margin-right: 8px; width: 100%;">
+                                                    
+                                                    <div>6</div>
+                                                    <div>5</div>
+                                                    <div>4</div>
+                                                    <div>3</div>
+                                                    <div>2</div>
+                                                    <div>1</div>
+                                                    <div></div>
+                                                </div>
+
+                                                <div class="text-center calenderdays daysmback" style="padding-left: 15px; padding-right: 15px; margin-right: 8px; width: 100%;">
+                                                    
+                                                    <div>13</div>
+                                                    <div>12</div>
+                                                    <div>11</div>
+                                                    <div>10</div>
+                                                    <div>9</div>
+                                                    <div>8</div>
+                                                    <div>7</div>
+                                                </div>
+
+                                                <div class="text-center calenderdays daysmback" style="padding-left: 15px; padding-right: 15px; margin-right: 8px; width: 100%;">
+                                                    
+                                                    <div>20</div>
+                                                    <div>19</div>
+                                                    <div>18</div>
+                                                    <div>17</div>
+                                                    <div>16</div>
+                                                    <div>15</div>
+                                                    <div>14</div>
+                                                </div>
+
+                                                <div class="text-center calenderdays daysmback" style="padding-left: 15px; padding-right: 15px; margin-right: 8px; width: 100%;">
+                                                    
+                                                    <div>27</div>
+                                                    <div>26</div>
+                                                    <div>25</div>
+                                                    <div>24</div>
+                                                    <div>23</div>
+                                                    <div>22</div>
+                                                    <div>21</div>
+                                                </div>
+
+                                                <div class="text-center calenderdays daysmback" style="padding-left: 15px; padding-right: 15px; margin-right: 8px; width: 100%;">
+                                                    
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div>30</div>
+                                                    <div>29</div>
+                                                    <div>28</div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-12 text-center" id="mountback">شهریور</div>
+                                                    <div class="btnright" >
+                                                        <button class="btn btn-sm btn-light" id="mountbackbtn">></button>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center calenderdays2" style="padding-left: 15px; padding-right: 15px; margin: 0; width: 100%;">
+                                                    
+                                                    <div>ج</div>
+                                                    <div>پ</div>
+                                                    <div>چ</div>
+                                                    <div>س</div>
+                                                    <div>د</div>
+                                                    <div>ی</div>
+                                                    <div>ش</div>
+                                                </div>
+
+                                                 <div class="text-center calenderdays daysmgo" style="padding-left: 15px; padding-right: 15px; margin-right: 8px; width: 100%;">
+                                                    
+                                                    <div>6</div>
+                                                    <div>5</div>
+                                                    <div>4</div>
+                                                    <div>3</div>
+                                                    <div>2</div>
+                                                    <div>1</div>
+                                                    <div></div>
+                                                </div>
+
+                                                <div class="text-center calenderdays daysmgo" style="padding-left: 15px; padding-right: 15px; margin-right: 8px; width: 100%;">
+                                                    
+                                                    <div>13</div>
+                                                    <div>12</div>
+                                                    <div>11</div>
+                                                    <div>10</div>
+                                                    <div>9</div>
+                                                    <div>8</div>
+                                                    <div>7</div>
+                                                </div>
+
+                                                <div class="text-center calenderdays daysmgo" style="padding-left: 15px; padding-right: 15px; margin-right: 8px; width: 100%;">
+                                                    
+                                                    <div>20</div>
+                                                    <div>19</div>
+                                                    <div>18</div>
+                                                    <div>17</div>
+                                                    <div>16</div>
+                                                    <div>15</div>
+                                                    <div>14</div>
+                                                </div>
+
+                                                <div class="text-center calenderdays daysmgo" style="padding-left: 15px; padding-right: 15px; margin-right: 8px; width: 100%;">
+                                                    
+                                                    <div>27</div>
+                                                    <div>26</div>
+                                                    <div>25</div>
+                                                    <div>24</div>
+                                                    <div>23</div>
+                                                    <div>22</div>
+                                                    <div>21</div>
+                                                </div>
+
+                                                <div class="text-center calenderdays daysmgo" style="padding-left: 15px; padding-right: 15px; margin-right: 8px; width: 100%;">
+                                                    
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div>30</div>
+                                                    <div>29</div>
+                                                    <div>28</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="justifysparound">
+                                            <div>
+                                                <button class="btn btn-primary" id="okeybut">تایید</button>
+                                            </div>
+                                            <button class="btn btn-danger" id="deletdaysgoback">پاک کردن</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-1   text-xsmall" >
+                            <div class=" border1 " style="height: 54px; display: flex; justify-content: center; align-items: center; " >
+                                <div >
+                                    <div style="margin: 0; padding: 0px;" class="">
+                                        <div style="display: flex; justify-content: center; align-self: center;">
+                                            <button class="mybtn5 mybtn5active" id="justgo">
+                                                <i class="fa-solid fa-arrow-right-long fa-sm"></i>
+                                            </button>
+                                        </div>
+                                        <div style="display: flex; justify-content: center; align-self: center;">
+                                            <button class="mybtn5" id="goandback">
+                                                <i class="fa-solid fa-arrows-left-right fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mr-3 ">
+                            <div class="row border1 p-2 boxshodow">
+                                <div class="col-md-6 borderright">
+                                    <div class="row abslute">
+                                        <div class="col-md-12 minifont miniinfo text-xsmall text-black" id="outinfo">شهر مقصد</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="search" id="tiketback" class="searchinput1" style="width: 100px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row abslute">
+                                        <div class="col-md-12 minifont miniinfo text-xsmall text-black" id="ininfo">شهر مبدا</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="search" id="tiketgo" class="searchinput1">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="position: absolute; display: none;" id="dropdownsearch">
+                                        <div class="col-md-12  dropdownsearch">
+                                            <div class="row" id="dropdownsearchrow">
+                                                <div class="col-md-12 text-xsmall text-black" style="border-bottom: 1px solid gainsboro;">منتخب ها</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="imagebox">
+            <img src="img/esphan.webp" alt="" class="img-fluid imgmain" id="imgour">
+            <button class="btn mybtn1 btnright1" id="btnright">بعدی</button>
+            <button class="btn mybtn1 btnleft1" id="btnleft">قبلی</button>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-md-12 textend text-black">بریم دور دور</div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <div class="row justifycenter">
+                    <div class="toorax">
+                    </div>
+                </div>
+                <div class="row mt-1 justifycenter">
+                    <div class="row mt-1 justifycenter">
+                        <div class="col-md-12 justifycenter text-small text-black">
+                            <button class="mybtn3"><p>تخفیف</p></button>
+                            <button class="mybtn3"><p>تخفیف</p></button>
+                            <button class="mybtn3"><p>تخفیف</p></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-xsmall text-black" style="font-size: x-large;">تهران گردیت با ما!</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="img/stars.png" alt="" class="stars">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black">
+                        شروع از 50 هزار تومان
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="row justifycenter">
+                    <div class="toorax">
+                    </div>
+                </div>
+                <div class="row mt-1 justifycenter">
+                    <div class="col-md-12 justifycenter text-small text-black">
+                        <button class="mybtn3"><p>تخفیف</p></button>
+                        <button class="mybtn3"><p>تخفیف</p></button>
+                        <button class="mybtn3"><p>تخفیف</p></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black" style="font-size: x-large;">تهران گردیت با ما!</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="img/stars.png" alt="" class="stars">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black">
+                        شروع از 50 هزار تومان
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="row justifycenter">
+                    <div class="toorax">
+                    </div>
+                </div>
+                <div class="row mt-1 justifycenter">
+                    <div class="col-md-12 justifycenter text-small text-black">
+                        <button class="mybtn3"><p>تخفیف</p></button>
+                        <button class="mybtn3"><p>تخفیف</p></button>
+                        <button class="mybtn3"><p>تخفیف</p></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black" style="font-size: x-large;">تهران گردیت با ما!</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="img/stars.png" alt="" class="stars">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black">
+                        شروع از 50 هزار تومان
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="row justifycenter">
+                    <div class="toorax">
+                    </div>
+                </div>
+                <div class="row mt-1 justifycenter">
+                    <div class="col-md-12 justifycenter text-small text-black">
+                        <button class="mybtn3"><p>تخفیف</p></button>
+                        <button class="mybtn3"><p>تخفیف</p></button>
+                        <button class="mybtn3"><p>تخفیف</p></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black" style="font-size: x-large;">تهران گردیت با ما!</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="img/stars.png" alt="" class="stars">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black">
+                        شروع از 50 هزار تومان
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 hotels">
+        <div class="row">
+            <div class="col-md-12 text-black textend">
+                بهترین هتل های ایران
+            </div>
+        </div>
+        <div class="row text-center justifycenter mt-3">
+            <div class="col-md-4 hotelmain">
+                <div class="row justifycenter ">
+                    <div class="hotelax"></div>
+                </div>
+                <div class="infohotel">
+                    <div class="justifycenter mt-1 " style="width: 350px;">
+                        <div class="col-md-12 text-small text-black">هتل درویش مشهد</div>
+                    </div>
+                    <div class="justifycenter " style="width: 350px;">
+                        <div class="col-md-12 noneinfo text-xsmall text-bold">از شبی 7.500.00</div>
+                    </div>
+                    <div class="justifycenter " style="width: 350px;">
+                        <div class="col-md-12 noneinfo text-xsmall text-bold">بهترین زمان در هفته</div>
+                    </div>
+                    <div class="justifycenter mt-1" style="width: 350px;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="btn mybtn1 noneinfo" style="background-color: aqua;">بیشتر</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="btn mybtn1 noneinfo text-xsmall" style="background-color: aqua;">رزرو</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="btn mybtn1 noneinfo"  style="background-color: aqua;">تماس</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4 hotelmain">
+                <div class="row justifycenter ">
+                    <div class="hotelax"></div>
+                </div>
+                <div class="infohotel">
+                    <div class="justifycenter " style="width: 350px;">
+                        <div class="col-md-12 text-small text-black">هتل درویش مشهد</div>
+                    </div>
+                    <div class="justifycenter" style="width: 350px;">
+                        <div class="col-md-12 noneinfo text-xsmall text-bold">از شبی 7.500.00</div>
+                    </div>
+                    <div class="justifycenter" style="width: 350px;">
+                        <div class="col-md-12 noneinfo text-xsmall text-bold">بهترین زمان در هفته</div>
+                    </div>
+                    <div class="justifycenter mt-1" style="width: 350px;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="btn mybtn1 noneinfo" style="background-color: aqua;">بیشتر</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="btn mybtn1 noneinfo text-xsmall" style="background-color: aqua;">رزرو</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="btn mybtn1 noneinfo"  style="background-color: aqua;">تماس</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 hotelmain">
+                <div class="row justifycenter ">
+                    <div class="hotelax"></div>
+                </div>
+                <div class="infohotel">
+                    <div class="justifycenter " style="width: 350px;">
+                        <div class="col-md-12 text-small text-black">هتل درویش مشهد</div>
+                    </div>
+                    <div class="justifycenter" style="width: 350px;">
+                        <div class="col-md-12 noneinfo text-xsmall text-bold">از شبی 7.500.00</div>
+                    </div>
+                    <div class="justifycenter" style="width: 350px;">
+                        <div class="col-md-12 noneinfo text-xsmall text-bold">بهترین زمان در هفته</div>
+                    </div>
+                    <div class="justifycenter mt-1" style="width: 350px;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="btn mybtn1 noneinfo" style="background-color: aqua;">بیشتر</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="btn mybtn1 noneinfo text-xsmall" style="background-color: aqua;">رزرو</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="btn mybtn1 noneinfo"  style="background-color: aqua;">تماس</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 textend text-black">
+                !ویلا رو سریع بجور
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <div class="justifycenter">
+                    <div class="vilaax"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black">ویلای شمال</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-black" style="font-size: 40px;">مازندران</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center" >
+                        <button class="mybtn3 text-black" style="width: 250px; align-items: center;">رزرو سریع</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-md-3">
+                <div class="justifycenter">
+                    <div class="vilaax"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black">ویلای شمال</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-black" style="font-size: 40px;">رشت</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center" >
+                        <button class="mybtn3 text-black" style="width: 250px; align-items: center;">رزرو سریع</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-3">
+                <div class="justifycenter">
+                    <div class="vilaax"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black">ویلای شمال</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-black" style="font-size: 40px;">گیلان</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center" >
+                        <button class="mybtn3 text-black" style="width: 250px; align-items: center;">رزرو سریع</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="justifycenter">
+                    <div class="vilaax"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-small text-black">ویلای شمال</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center text-black" style="font-size: 40px;">ساری</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center" >
+                        <button class="mybtn3 text-black" style="width: 250px; align-items: center;">رزرو سریع</button>
+                    </div>
+                </div>
+            </div>        </div>
+    </div>
+
+    <div class="container mt-5" >
+        <div style='justify-content: end; display: flex;'><div>پرسش های شما</div></div>
+        <div class="boxrecomend mt-3" style='justify-content: end; display: flex;'>
+            <div class="text-center">
+                <div class="titlematn textend" style="justify-self: end;">چند روز قبل از پرواز، بلیط هواپیما را بخریم؟</div>
+                <div class="extramatn text-small" style="display: none; justify-self: end;">امکان رزرو بلیط هواپیما از ماه‌ها قبل وجود دارد. اما گاهی اوقات قیمت بلیط هواپیما در روزهای نزدیک به پرواز ارزان‌تر می‌شود. بنابراین در صورتی که شرایطتان اجازه می‌دهد، رزرو آنلاین بلیط هواپیما را به روزهای نزدیک پرواز موکول کنید. البته اگر قصد سفر در ایام پرسفر نظیر تعطیلات را دارید، باید هر چه زودتر رزرو بلیط هواپیما را انجام دهید.</div>
+            </div>
+        </div>
+        <div class="boxrecomend mt-1" style='justify-content: end; display: flex;'>
+            <div class="text-center">
+                <div class="titlematn textend" style="justify-self: end;">چند روز قبل از پرواز، بلیط هواپیما را بخریم؟</div>
+                <div class="extramatn text-small" style="display: none; justify-self: end;">امکان رزرو بلیط هواپیما از ماه‌ها قبل وجود دارد. اما گاهی اوقات قیمت بلیط هواپیما در روزهای نزدیک به پرواز ارزان‌تر می‌شود. بنابراین در صورتی که شرایطتان اجازه می‌دهد، رزرو آنلاین بلیط هواپیما را به روزهای نزدیک پرواز موکول کنید. البته اگر قصد سفر در ایام پرسفر نظیر تعطیلات را دارید، باید هر چه زودتر رزرو بلیط هواپیما را انجام دهید.</div>
+            </div>
+        </div>
+        <div class="boxrecomend mt-1" style='justify-content: end; display: flex;'>
+            <div class="text-center">
+                <div class="titlematn textend" style="justify-self: end;">چند روز قبل از پرواز، بلیط هواپیما را بخریم؟</div>
+                <div class="extramatn text-small" style="display: none; justify-self: end;">امکان رزرو بلیط هواپیما از ماه‌ها قبل وجود دارد. اما گاهی اوقات قیمت بلیط هواپیما در روزهای نزدیک به پرواز ارزان‌تر می‌شود. بنابراین در صورتی که شرایطتان اجازه می‌دهد، رزرو آنلاین بلیط هواپیما را به روزهای نزدیک پرواز موکول کنید. البته اگر قصد سفر در ایام پرسفر نظیر تعطیلات را دارید، باید هر چه زودتر رزرو بلیط هواپیما را انجام دهید.</div>
+            </div>
+        </div>
+
+
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+    </div>
+</body>
+<script src="javascript.js" type="module" ></script>
+<script src="darkmood/jsdarkmood.js"></script>
+<script src="darkmood/jsalldarkfunction.js"></script>
+<script src="darkmood/jsalldayfunction.js"></script>
+<script src="products/ticketdata.js" ></script>
+<script type="module" src="jsfunctions.js"></script>
+
+</html>

@@ -1,0 +1,22 @@
+.mybtn1dark{
+    background-color: rgb(29, 36, 46);
+    color: white;
+    border: 0;
+}
+.mybtn3dark{
+    background-color: rgb(29, 36, 46);
+    border: 1px solid rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: smaller;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    color: white;
+}
+.mybtn3dark:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}

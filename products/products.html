@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/iranian-sans" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2bb21f4a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+    <link rel="stylesheet" href="stProduct.css">
+    <link rel="stylesheet" href="../myboot.css">
+    <link rel="stylesheet" href="style.css">
+    <title>products</title>
+</head>
+<body style="height: 1000px; direction: ltr; background-color: white; font-size: large; font-weight: bold;">
+
+<div class="sidebar" id="sidebar">
+  <div class="row">
+    <div class="col-md-12 text-center mt-3 text-small">سبد خرید</div>
+  </div>
+  <div class="helperticket row" id="helperticket" style="display: none;">
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center submithelperdiv" id="submithelperdiv" style="display: none;">
+      <button class="btn btn-primary" id="submithelper">بلیطو بزار تو جیبت</button>
+    </div>
+  </div>
+</div>
+
+    <div class="container mt-3 justifycenter" >
+        <div class="row text-center" style="width: 100%; z-index: 2;background-color: white; ">
+            <div class="col-md-4 ">
+                <div class="logomatn">
+                    <img src="../img/logomatn.png" alt="" class="">
+                </div>
+            </div>
+            <div class="col-md-1">تور</div>
+            <div class="col-md-1">تجربه </div>
+            <div class="col-md-1">سفر ها</div>
+            <div class="col-md-1">بیشتر</div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-md-6">ورود</div>
+                    <div class="col-md-6">زبان ها</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-12 showinfodiv" style="display: none;" id="showinfodiv">
+          <div class="controlcont">
+            <div class="justifycenter">
+                <button class="btn btn-primary w50 mt-2 justifycenter aligencenter" id="plusehandler"> <i class="fa-solid fa-plus fa-xs"></i> </button>
+            </div>
+            <div class="justifycenter">
+                <button class="btn btn-warning w50 mt-2 justifycenter aligencenter" id="menhahandler"> <i class="fa-solid fa-minus fa-xs"></i> </button>
+            </div>
+            <div class="justifycenter">
+                <button class="btn btn-danger w50 mt-2 text-xsmall justifycenter aligencenter" id="delethandler"> <i class="fa-solid fa-trash fa-lg"></i> </button>
+            </div>
+            <div class="justifycenter">
+              <button class="btn mybtn7 w50 btn-sm mt-2 justifycenter aligencenter" id="closeinfo">بستن</button>
+            </div>
+            <div class="justifycenter">
+              <button class="btn mybtn7 w50 btn-sm mt-2 justifycenter aligencenter" id="infoburis" onclick="infohandler(ticketsRemainingdivinner)">بستن</button>
+            </div>
+        </div>
+        <div class="adoltorkid">
+          <div class="justifycenter aligencenter">
+            <button class="btn btn-dark mt-2 text-xsmall" id="alult" style="width: 60px; height: 30px;">بزرگسال</button>
+        </div>
+        <div class="justifycenter aligencenter">
+            <button class="btn btn-dark mt-1 text-xsmall" id="kid" style="width: 60px; height: 30px;">کودک</button>
+        </div>
+        </div>
+          <div class="row mt-3">
+              <div class="col-md-3" style="border-right: 1px solid; height: 460px;">
+                  <div class="justifysparound aligencenter mt-3 pb-3" style="border-bottom: 1px solid gainsboro;">
+                      <div  id="ticketsRemainingdiv">12</div>
+                      <div class="text-small" >:بیلیط باقی مانده</div>
+                  </div>
+      
+                  <div class="justifycenter aligencenter mt-3 pb-3" style="border-bottom: 1px solid gainsboro;">
+                      <div class="text-small">جزئیات قیمت</div>
+                  </div>
+      
+                  <div class=" mt-3 pb-3 justifycenter aligencenter" style="border-bottom: 1px solid gainsboro;">
+                      <div id="detaltiket">
+                        
+                      </div>
+                  </div>
+      
+                  <div class="justifysparound aligencenter mt-3 pb-3" style="border-bottom: 1px solid gainsboro;">
+                      <div id="sumofcost">4800000</div>
+                      <div class="text-small">: مجموع</div>
+                  </div>
+
+                  <div style="position: absolute; bottom: 0; left: 20%;">
+                    <button class="btn btn-primary" id="confermbut">بلیطو بزار تو جیبت</button>
+                  </div>
+              </div>
+      
+              <div class="col-md-9">
+                  <div style="border-bottom: 1px solid; padding-bottom: 10px;">
+
+      
+                      <div>
+                          <div class="justifysparound aligencenter text-small mt-4">
+                            <div>قوانین بار</div>
+                            <div>قوانین پرواز</div>
+                            <div>قوانین استرداد</div>
+                            <div>اطلاعات پرواز</div>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="justifysparound text-small mt-3">
+                    <div class="" id="class">اکونومی</div>
+                    <div id="airlinenameis">ایران ایر</div>
+                </div>
+
+                  <div class="justifysparound text-small mt-3">
+                    <div class="text-black text-xlarge" id="destinationdiv">شیراز</div>
+                    <div> <i class="fa-solid fa-plane fa-flip-horizontal" style="margin: 0;"></i> </div>
+                    <div class="text-black text-xlarge" id="origindiv">تهران</div>
+                </div>
+
+                  <div class="row text-small mt-3">
+                      <div class="col-md-6" id="origindiv">استانبول، فرودگاه استانبول</div>
+                      <div class="col-md-6">
+                          <div class="justifyend aligencenter">
+                              <div class="mr-2" id="timetiketis">یکشنبه، 22 مهر</div>
+                              <div class="text-xlarge text-black">13:50</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="justifyend mt-3 aligencenter">
+                      <button class="btn btn-sm btn-light mr-2" id="flightNumberBtn">321</button>
+                      <button class="btn btn-sm btn-light mr-2" id="fareClassBtn">کلاس نرخی 7</button>
+                      <button class="btn btn-sm btn-light" id="flightNumberLabel">شماره پرواز</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="hiderdiv" id="hiderdiv" style="display: none;"></div>
+      
+      </div>
+    </div>
+    <div class="container mt-5" style="width: 98%;">
+        <div class="row text-center">
+            <div class="col-md-9 mt-5 pr-5 pl-0">
+              <div class="row ">
+                <div class="col-md-12 ">
+                  <div class="row text-center searchheplernav aligencenter">
+                    <div class="col-md-2">
+                      <button class="btn mybtn2 justifycenter aligencenter" style="height: 30px;">جستجو</button>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="border1 text-center justifycenter">
+                        <div class="col-md-12 " >
+                          <div class="searchhelp" style="left: 35%; width: 40px;">تعداد</div>
+                          <input type="text" id="searchhelpcount" class="inputhepler" >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="border1 text-center justifycenter">
+                        <div class="col-md-5  mr-2 borderright" >
+                          <div class="searchhelp" style="left: 13%">تاریخ برگشت</div>
+                          <input type="text" id="searchhelpbackday" class="inputhepler" style="font-size: small; font-weight: bold;" >
+                        </div>
+                        <div class="col-md-5 ">
+                          <div class="searchhelp">تاریخ رفت</div>
+                          <input type="text" id="searchhelpgoday" class="inputhepler"  style="font-size: small; font-weight: bold;">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="border1 text-center justifycenter">
+                        <div class="col-md-5  mr-2 borderright" >
+                          <div class="searchhelp" style="left: 19%;">شهر مقصد</div>
+                          <input type="text" id="searchhelpbackinput" class="inputhepler" >
+                        </div>
+                        <div class="col-md-5 ">
+                          <div class="searchhelp">شهر مبدا</div>
+                          <input type="text" id="searchhelpgoinput" class="inputhepler" >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <div id="holdertiket" class="text-center">
+                    <p class="text-xlarge">بلیت های رفت</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <div id="holdertiketback" class="text-center" style="display: none;">
+                    <p class="text-xlarge">بلیت های برگشت</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+
+            <div class="col-md-3" >
+                <div class="row mt-5 mb-3">
+                    <div class="col-md-12 text-center">نتایج : 52</div>
+                </div>
+
+                <div class="row bordertop">
+                    <div class="col-md-12 mt-3">
+                        <div class="row " style="display: flex; justify-content: space-between;">
+                            <div >
+                                <button class="btn btn-sm btn-dark">مخفی</button>
+                            </div>
+                            <div style="margin-left: 40px;">ساعت حرکت</div>
+                        </div>
+                        <div class="row border1 mt-4">
+                            <div class="col-md-6 text-center">
+                                <div class="minifont2" style="width: 50px;">از ساعت</div>
+                                <input type="search" class="searchbox borderright">
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <div class="minifont2" style="width: 50px;">تا ساعت</div>
+                                <input type="search" class="searchbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 bordertop ">
+                    <div class="col-md-12 mt-3">
+                        <div class="row " style="display: flex; justify-content: space-between;">
+                            <div >
+                                <button class="btn btn-sm btn-dark">مخفی</button>
+                            </div>
+                            <div style="margin-left: 40px;">نوع بلیط</div>
+                        </div>
+                        <div class="row" style="display: flex ; justify-content: space-around;">
+                            <form id="filterForm">
+                                <div class="form-check form-check-inline">
+                                  <input class="for m-check-input mr-1" type="checkbox" value="option1" id="option1">
+                                  <label class="form-check-label" for="option1">چارتر</label>
+                                </div>
+                              </form>
+                              <form id="filterForm">
+                                <div class="form-check form-check-inline">
+                                  <input class="for m-check-input mr-1" type="checkbox" value="option1" id="option1">
+                                  <label class="form-check-label" for="option1">سیستمی</label>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 bordertop ">
+                    <div class="col-md-12 mt-3">
+                        <div class="row " style="display: flex; justify-content: space-between;">
+                            <div >
+                                <button class="btn btn-sm btn-dark">مخفی</button>
+                            </div>
+                            <div style="margin-left: 40px;">کلاس پروازی</div>
+                        </div>
+                        <div class="row" style="display: flex ; justify-content: space-around;">
+                            <form id="filterForm2">
+                                <div class="form-check form-check-inline">
+                                  <input class="for m-check-input mr-1" type="checkbox" value="option1" id="option1">
+                                  <label class="form-check-label" for="option1">اکونومی</label>
+                                </div>
+                              </form>
+                              <form id="filterForm2">
+                                <div class="form-check form-check-inline">
+                                  <input class="for m-check-input mr-1" type="checkbox" value="option1" id="option1">
+                                  <label class="form-check-label" for="option1">بیزینس</label>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="row mt-5 bordertop ">
+                    <div class="col-md-12 mt-3">
+                        <div class="row " style="display: flex; justify-content: space-between;">
+                            <div >
+                                <button class="btn btn-sm btn-dark">مخفی</button>
+                            </div>
+                            <div style="margin-left: 40px;">کلاس پروازی</div>
+                        </div>
+                        <div class="row" style="display: flex ; justify-content: space-around;">
+                            <form id="filterForm" class="d-flex flex-column align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="emirates" id="emirates">
+                                  <label class="form-check-label" for="emirates">
+                                    امارات
+                                    <small class="text-muted mr-3">5.000.000 میلیون تومان</small>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="qatar-airways" id="qatar-airways">
+                                  <label class="form-check-label" for="qatar-airways">
+                                    قطر ایرویز
+                                    <small class="text-muted mr-3">5.000.000 میلیون تومان</small>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="singapore-airlines" id="singapore-airlines">
+                                  <label class="form-check-label" for="singapore-airlines">
+                                    سنگاپور ایرلاینز
+                                    <small class="text-muted mr-3">5.000.000 میلیون تومان</small>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="turkish-airlines" id="turkish-airlines">
+                                  <label class="form-check-label" for="turkish-airlines">
+                                    ترکیش ایرلاینز
+                                    <small class="text-muted mr-3">5.000.000 میلیون تومان</small>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="lufthansa" id="lufthansa">
+                                  <label class="form-check-label" for="lufthansa">
+                                    لوفت‌هانزا
+                                    <small class="text-muted mr-3">5.000.000 میلیون تومان</small>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="british-airways" id="british-airways">
+                                  <label class="form-check-label" for="british-airways">
+                                    بریتیش ایرویز
+                                    <small class="text-muted mr-3">5.000.000 میلیون تومان</small>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="etihad-airways" id="etihad-airways">
+                                  <label class="form-check-label" for="etihad-airways">
+                                    اتحاد ایرویز
+                                    <small class="text-muted mr-3">5.000.000 میلیون تومان</small>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="ana" id="ana">
+                                  <label class="form-check-label" for="ana">
+                                    ایران ایر
+                                    <small class="text-muted mr-3">5.000.000 میلیون تومان</small>
+                                  </label>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="javasProduct.js"></script>
+<script  src="ticketdata.js"></script>
+</html>

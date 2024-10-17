@@ -1,0 +1,381 @@
+.body{
+    font-size: x-large;
+    height: 2500px;
+    background-color: white; 
+}
+
+button:focus {
+    outline: none
+}
+
+.logomatn{
+    width: 150px;
+    height: auto;
+}
+.logomatn img{
+    max-width: 100%;
+    height: auto;
+}
+.bordermenu{
+    border-bottom: 3px solid rgba(50, 75, 108, 1);
+}
+.menudiv{
+    box-sizing: border-box; /* برای ثابت ماندن اندازه کلی */
+}
+.menudiv:hover {
+    border-bottom: 3px solid rgba(50, 75, 108, 1);
+}
+.searchin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.searchbox{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.097) ;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+#searchit{
+    width: 500px;
+}
+.searchinput{
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    margin-right: 5px;
+    direction: rtl; text-align: right;
+}
+.searchinput:focus{
+    outline: 0;
+}
+.searchinput1{
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    margin-right: 5px;
+    width: 110px;
+    direction: rtl; text-align: right;
+    font-size: large;
+    font-weight: bold;
+}
+.searchinput1:focus{
+    outline: 0;
+}
+.searchinput2{
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    margin-left: 135px;
+    width: 110px;
+    direction: rtl; text-align: right;
+}
+.searchinput2:focus{
+    outline: 0;
+}
+.searchinput3{
+    background-color: rgb(253, 251, 251);
+    border: 0;
+    margin-right: 10px;
+    direction: rtl; text-align: right;
+}
+.searchinput3:focus{
+    outline: 0;
+}
+.bennerimg{
+    background-image: url('img/bannerimg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    border-radius: 10px;
+}
+.miniinfo{
+    top:-22px;
+    background-color: white;
+    left: 25px;
+}
+.miniinfo2{
+    top: -18px;
+    left: 150px;
+    background-color: white;
+}
+.toorax{
+    background-image: url('img/tehransq.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+.stars{
+    height: 35px;
+}
+.hotelmain{
+    border-radius: 10px;
+    transition-duration: 2s;
+    transition-property: height;
+}
+.infohotel{
+    height: 40px;
+    display: block;
+    transition: height 0.5s; /* انتقال ارتفاع و شفافیت */
+    border: 1px solid rgba(50, 75, 108, 1);
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+.hotelmain:hover .infohotel{
+    height: 120px;
+}
+.hotelmain:hover .noneinfo{
+    opacity: 1;
+}
+.hotelax{
+    background-image: url('img/hotel.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 350px;
+    border-radius: 10px 10px 0px 0px;
+}
+.hotels{
+    height: 330px;
+}
+
+.noneinfo{
+    opacity: 0;
+    transition: opacity 0.55s;
+}
+.vilaax{
+    background-image: url('img/vila.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 255px;
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+#flyin{
+    border: 0;
+}
+#flyinsearch{
+    height: 120px;
+}
+#hotelsearch{
+    height: 129.02px;
+}
+.dropdownsearch{
+    top: 12px;
+    left: -130px;
+    width: 265px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    overflow-y : auto;
+    max-height: 150px;
+    direction: rtl;
+    background-color: rgb(248, 249, 250)
+}
+.dropdownbut{
+    width: 90%;
+    height: 40px;
+    background-color: rgb(248, 249, 250);
+    border: 0;
+}
+.dropdownbut:hover{
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+.dropdowntime{
+    width: 710px;
+    top: 60px;
+    left: -430px;
+    height: 360px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(248, 249, 250);
+}
+.calenderdays{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calenderdays div{
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    border-radius: 5px;
+    border: 2px solid rgba(248, 249, 250, 1);
+    margin-top: 2px;
+    cursor: pointer;   
+}
+.calenderdays div:hover{
+    border: 2px solid rgba(50, 75, 108, 1);
+    cursor: pointer;
+}
+.calenderdays div:active{
+    border: 2px solid rgba(50, 75, 108, 1);
+    background-color: rgba(50, 75, 108, 1);
+    color: white;
+}
+.calenderdaysnone{
+    border: 0 !important;
+    background-color: white !important;
+    cursor: default !important;
+    pointer-events: none !important;
+    
+}
+.calenderdaysnone:hover{
+    border: 0;
+}
+.calenderdaysnone:active{
+    border: 0;
+    background-color: white;
+    color: white;
+}
+.calenderdays div:focus{
+    border: 2px solid rgba(50, 75, 108, 1);
+    background-color: rgba(50, 75, 108, 1);
+    color: white;
+}
+.calenderdays2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calenderdays2 div{
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    
+}
+.btnright{
+    position: absolute;
+    left: 305px;
+    top: -5px;
+    font-weight: bold;
+}
+.btnleft{
+    position: absolute;
+    left: 32px;
+    top: -5px;
+    font-weight: bold;
+}
+#goday{
+    border: 2px solid rgba(50, 75, 108, 1);
+    background-color: rgba(50, 75, 108, 1);
+    color: white;
+}
+#backday{
+    border: 2px solid rgba(88, 247, 250, 1);
+    background-color: rgba(88, 247, 250, 1);
+}
+.no-click {
+    pointer-events: none;
+    opacity: 20%;
+}
+
+#dropdowntime{
+    box-shadow: 0;
+    transition-property: box-shadow;
+    transition-duration: 0.2s;
+    
+}
+
+#dropdowntime:hover{
+    box-shadow: 5px 5px 0.5px rgba(0, 0, 0, 0.176);
+}
+
+.boxshodow{
+    box-shadow: 0;
+    transition-property: box-shadow;
+    transition-duration: 0.2s;
+    border-radius: 10px;
+}
+.boxshodow:hover{
+    box-shadow: 2px 2px 0.5px rgba(50, 75, 108, 0.413);
+}
+
+.boxrecomend{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    transition-property: box-shadow , height;
+    transition-duration: 0.2s;
+    cursor:pointer;
+}
+.boxrecomend:hover{
+    box-shadow: 2px 2px 0.5px rgba(50, 75, 108, 0.413);
+}
+.imgmain{
+    width: 750px;
+    border-radius: 10px;
+}
+.imagebox{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.btnright1{
+    position: absolute;
+    left: 72%;
+    z-index: 0;
+}
+.btnleft1{
+    position: absolute;
+    left: 23.5%;
+    z-index: 0;
+}
+.searchbox5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.searchboxmain{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.searchme{
+    width: 400px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    direction: rtl;
+    padding: 10px;
+}
+.searchhelper{
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    z-index: 333 !important;
+
+}
+.searchhelper div{
+    text-align: end;
+    margin: 10px;
+    font-size: medium;
+    font-weight: bolder;
+}
+.noselect {
+    user-select: none; /* جلوگیری از انتخاب */
+}
+
+.noacsses{
+    background-color: rgba(132, 132, 132, 0.383);
+    position: absolute;
+    height: 54px;
+    top: -30%;
+    left: -8%;
+    width: 133px;
+    z-index: 2;
+    border-radius: 10px 10px 0 10px;
+}

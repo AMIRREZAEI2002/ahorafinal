@@ -1,0 +1,146 @@
+.borderbot{
+    border-bottom: 3px solid rgba(50, 75, 108, 1);
+}
+.borderright{
+    border-right: 1px solid rgba(128, 128, 128, 0.321);
+    z-index: 0;
+}
+.bordertop{
+    border-top: 1px solid rgba(128, 128, 128, 0.321);
+}
+.mybtn1{
+    background-color: white;
+    border: 0;
+}
+.mybtn2{
+    background-color: rgba(88, 247, 250, 1);
+    border: 0;
+    height: 40px;
+    border-radius: 50px;
+    width: 100px;
+}
+.mybtn3{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(50, 75, 108, 1);
+    height: 40px;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: smaller;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.mybtn3:hover{
+    background-color: rgba(50, 75, 108, 1);
+    color: white;
+}
+.mybtn4{
+    width: 105px;
+    font-size: x-large;
+}
+.justifyend{
+    justify-content: end;
+    display: flex;
+}
+.justifystart{
+    justify-content: start;
+    display: flex;
+}
+.justifycenter{
+    justify-content: center;
+    display: flex;
+}
+.aligencenter{
+    display: flex;
+    align-items: center;
+}
+.border1{
+    border: 1px solid rgba(128, 128, 128, 0.321);
+    border-radius: 10px;
+}
+.minifont{
+    font-size: 22.5px;
+    z-index: 2;
+}
+.abslute{
+    position: absolute;
+
+}
+.btnbigerfont{
+    font-size: x-large;
+    height: 30px;
+    align-items: center;
+    align-self: center;
+}
+.justifysparound{
+    display: flex;
+    justify-content: space-between;
+}
+.justifyspbetwen{
+    display: flex;
+    justify-content: space-between;
+}
+
+.textend{
+    display: flex;
+    justify-content: end;
+}
+.cursorp{
+    cursor: pointer;
+}
+
+.mybtn5{
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 10px;
+    width: 50px;
+    padding: 2px;
+}
+.mybtn5:hover{
+    background-color: rgba(88, 247, 250, 1);
+}
+.mybtn5:active{
+    background-color: rgb(1, 211, 211);
+}
+.mybtn5active{
+    background-color: rgb(1, 211, 211);
+}
+
+.mybtn6{
+    background-color: rgba(88, 247, 250, 1);
+    border: 0;
+    border-radius: 10px;
+    width: 50px;
+    padding: 2px;
+}
+.mybtn6:hover{
+    background-color: rgb(3, 187, 190);
+}
+.mybtn6:active{
+    background-color: rgb(3, 187, 190);
+}
+.mybtn5active{
+    background-color: rgb(3, 187, 190);
+}
+
+.mybtn7{
+    background-color: rgb(255, 0, 0);
+    border: 0;
+    border-radius: 3px;
+    width: 50px;
+    padding: 2px;
+    color: white;
+    font-weight: bolder;
+}
+.mybtn7:hover{
+    background-color: rgb(190, 3, 3);
+}
+.mybtn7:active{
+    background-color: rgb(190, 3, 3);
+}
+.w50{
+    width: 40px;
+    height: 40px;
+}
+

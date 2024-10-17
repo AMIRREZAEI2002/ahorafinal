@@ -1,0 +1,159 @@
+.bodydarkmood{
+    background-color: rgb(29, 36, 46);
+    color: white;
+    font-family: "Adobe Arabic SHIN", sans-serif;
+    font-size: x-large;
+    
+}
+.bodyday{
+    font-family: "Adobe Arabic SHIN", sans-serif;
+    font-size: x-large;
+    height: 2500px;
+    background-color: white;
+}
+
+
+.miniinfodark{
+    top:-22px;
+    background-color: rgb(29, 36, 46);
+    left: 25px;
+}
+.miniinfo2dark{
+    top: -18px;
+    left: 150px;
+    background-color: rgb(29, 36, 46);
+}
+
+.searchinput1dark{
+    background-color: rgb(29, 36, 46);
+    border: 0;
+    margin-right: 5px;
+    width: 110px;
+    direction: rtl; text-align: right;
+}
+.searchinput1dark:focus{
+    outline: 0;
+}
+.searchinput2dark{
+    background-color: rgb(29, 36, 46);
+    border: 0;
+    margin-left: 135px;
+    width: 110px;
+    direction: rtl; text-align: right;
+}
+.searchinput2dark:focus{
+    outline: 0;
+}
+.searchinput3dark{
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    margin-right: 10px;
+    direction: rtl; text-align: right;
+}
+.searchinput3dark:focus{
+    outline: 0;
+}
+
+        .mybtndarkthemedark{
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid rgb(255, 255, 255);
+            background-color: rgb(29, 36, 46);
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            cursor: pointer;
+            transition: justify-content 0.5s ease;
+            box-shadow: 2px 2px 2px rgb(0, 0, 0);
+        }
+        #darkthembutmain{
+            cursor: pointer;
+        }
+        
+        .boxforicondark{
+            background-color: rgba(88, 247, 250, 1);
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mybtndarkthemeday{
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid black;
+            background-color: rgba(88, 247, 250, 1);
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            transition: justify-content 0.5s ease;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.391);
+        }
+        .boxforiconday{
+            background-color: rgb(29, 38, 51);
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+
+
+
+
+.dropdownsearchdark{
+    top: 12px;
+    left: -130px;
+    width: 265px;
+    border-radius: 10px;
+    border: 1px solid rgb(29, 36, 46);
+    overflow-y : auto;
+    max-height: 150px;
+    direction: rtl;
+    background-color: rgb(29, 36, 46);
+    color: white;
+}
+.dropdownbutdark{
+    width: 90%;
+    height: 40px;
+    background-color: rgb(29, 36, 46);
+    border: 0;
+    color: white
+}
+.dropdownbutdark:hover{
+    background-color: rgb(39, 60, 90);
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.dropdowntimedark{
+    width: 710px;
+    top: 60px;
+    left: -430px;
+    height: 360px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(29, 36, 46);
+}
+
+.calenderdaysdark div{
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    border-radius: 5px;
+    border: 2px solid rgba(29, 36, 46);
+    margin-top: 2px;   
+}
+.calenderdaysdark div:hover{
+    border: 2px solid rgb(255, 255, 255);
+}

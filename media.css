@@ -1,0 +1,9 @@
+@media(max-width < 700px){
+    .bennerimg{
+        height: 100px;
+        width: 300px;
+    }
+    .chose{
+        background-color: aqua;
+    }
+}
